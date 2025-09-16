@@ -9,7 +9,7 @@ playlist.push('March Madness', 'Labubu Phonk', 'Just Dance')
 playlist[2]='Test'
 
 // Task 4: Delete the "Test" element 
-playlist.pop
+playlist.pop()
 // Console log the array
 console.log(playlist)
 
@@ -33,16 +33,23 @@ delete song.artist
 // ----------------------------------
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
-
+let album = {
+    name: "",
+    year: "",
+    songs: "",
+};
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
-
+album.songs[0] = playlist[0];
+album.songs[1] = playlist[1];
 
 // Console log the length of the album's songs array to confirm it worked
-
+console.log(album.songs.length)
 // Task 10: Update the title of the song to be all lowercase. 
+album.songs[0].toLowerCase();
+album.songs[1].toLowerCase();
 // Console log the album object to check your change
-
+console.log(album);
 
 // Commit your changes with an appropriate message.
 // ----------------------------------
